@@ -1,0 +1,34 @@
+.act-page{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    margin: 0 4% 0 4%;
+}
+.ActivityList{
+    display: grid;
+    grid-gap: 20px;
+}
+.results-number{
+    color: gray;
+}
+.result-sort{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.prev-next{
+    margin: 50px 0 150px 0;
+    justify-self: center;
+}
+.prev-next-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.results-number{
+    color: gray;
+}
+.buttons-prev{
+    margin-right: 10px;
+}
+.buttons-next{
+    margin-left: 10px;
+}

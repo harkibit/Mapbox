@@ -1,0 +1,25 @@
+.itemsContainer {
+    border-radius: 5px;
+  }
+  .items {
+    text-align: center;
+    font-size: 18px;
+  }
+  .items:hover {
+    border-radius: 5px;
+    background: #1890FF;
+    color: white;
+  }
+  .dropButton {
+    border: 1px solid #cecece;
+    color : #091945;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .dropButton:hover {
+    border-color: #1890FF;
+  }

@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+/* collapse styling */
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  /* border: var(--header-border, 1px solid black); */
+  background-color: rgba(143, 143, 143, 0.377);
+  color: white;
+  border-radius: 50%;
+}
+.ant-collapse > .ant-collapse-item{
+  background-color: rgba(36, 238, 211, 0.911);
+  border-radius: 50%;
+
+}
+.ant-collapse{
+  width: 50%;
+  color: white;
+  border-radius: 50%;
+}
+.active.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  border-top: 3px solid black;
+}
+
+.panel{
+  background-color: rgba(36, 238, 211, 0.911);
+  width: 100;
+}
