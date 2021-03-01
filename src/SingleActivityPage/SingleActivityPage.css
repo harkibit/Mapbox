@@ -1,0 +1,66 @@
+.single-act-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.back-btn {
+  align-self: flex-start;
+}
+.grid-view {
+  margin-top: 2ch;
+  height: 82ch;
+  width: 90%;
+  border: 1px solid #f1f3f4;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.left-side-grid {
+  display: flex;
+  flex-direction: column;
+  padding: 6%;
+  justify-content: space-between;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header-child-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -20px;
+}
+.header-child-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
+}
+.heartSize {
+  font-size: 25px;
+}
+.heartOutlined {
+  color: #c4d0b8;
+}
+.heartFilled {
+  color: rgb(248, 4, 4);
+}
+.left-grid-description {
+  font-size: large;
+}
+.left-grid-tour-guide {
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  align-self: center;
+}
+.hire-box {
+  text-align: center;
+  border: 1px solid #f1f3f4;
+  padding: 20px;
+  width: 400px;
+  border-radius: 10px;
+}
+.hire-btn {
+  height: 30px;
+}

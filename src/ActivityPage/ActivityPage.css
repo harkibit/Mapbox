@@ -1,34 +1,65 @@
-.act-page{
-    display: grid;
-    grid-template-columns: 55% 45%;
-    margin: 0 4% 0 4%;
+.act-page {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-areas:
+    "cards map";
+  margin: 0 3% 0 4%;
 }
-.ActivityList{
-    display: grid;
-    grid-gap: 20px;
+@media screen and (max-width: 600px) {
+  .act-page {
+    grid-template-columns: 100%;
+    grid-template-areas: "map" "cards";
+  }
 }
-.results-number{
-    color: gray;
+.left-grid-column {
+  grid-area: "cards";
 }
-.result-sort{
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
+.right-grid-column {
+  grid-area: "map";
 }
-.prev-next{
-    margin: 50px 0 150px 0;
-    justify-self: center;
+
+.ActivityList {
+  display: grid;
+  grid-gap: 20px;
 }
-.prev-next-buttons{
-    display: flex;
-    justify-content: space-between;
+.results-number {
+  color: gray;
 }
-.results-number{
-    color: gray;
+.result-sort {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px 0 -5px 0;
 }
-.buttons-prev{
-    margin-right: 10px;
+.only-outdoor {
+  background-color: #e8f0fe;
+  color: #0091ea;
+  padding: 7px 15px;
+  border-radius: 10px;
 }
-.buttons-next{
-    margin-left: 10px;
+.only-outdoor:hover {
+  cursor: pointer;
+}
+
+.loading {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 90%;
+}
+.spinner {
+  justify-self: center;
+  margin: 10px 0;
+}
+/* footer of the cards part */
+.pagination {
+  justify-self: center;
+  margin: 30px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+}
+.result-count {
+  padding: 10px;
+  align-self: center;
 }

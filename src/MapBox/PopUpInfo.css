@@ -1,0 +1,34 @@
+.mapboxgl-popup-content {
+  padding: -10px;
+  border-radius: 10px;
+  height: 200px;
+  width: 180px;
+}
+.container-popup {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+}
+.view-price {
+  color: #0091ea;
+  padding: 8px;
+  align-self: center;
+  margin-top: 4px;
+}
+.view-price:hover {
+  background-color: #e8f0fe;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.info-style-popup {
+  padding: 0 10px;
+}
+.city-name-popup{
+  margin-bottom: -2px;
+}
+.img-padding-popup{
+  margin: -10px -10px 0 -10px ;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}

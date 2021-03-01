@@ -1,0 +1,28 @@
+.user-profile-page{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.user-profile-header{
+    align-self: center;
+    margin-bottom: 10px;
+}
+.description{
+    font-size: 15px;
+    color : gray;
+}
+.fav-list-title{
+    display: flex;
+    justify-content: space-between;
+    width: calc(100vw - 140px)
+}
+.fav-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+}
+.edit-list:hover{
+    color: #1890FF;
+    cursor: pointer;
+}

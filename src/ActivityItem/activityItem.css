@@ -1,33 +1,33 @@
 .cardSize {
-    height: 200px;
-    width: 90%;
-    border-radius: 10px;
-  }
-  .heartSize {
-    font-size: 30px;
-  }
-  .image{
-    border-radius: 10px;
-  }
-  .heartOutlined {
-    color: #c4d0b8;
-  }
-  .heartFilled {
-    color: rgb(248, 4, 4);
-  }
-  .middle-row-height {
-    height: 70px;
-  }
-  .bdge-color {
-    background-color: #52c41a;
-  }
-  .cityName{
-    color: gray;
-  }
-  .learnMore{
-    color: gray;
-  }
-  .learnMore:hover{
-    transition: 0.1s;
-    color: #0091EA;
-  }
+  height: 200px;
+  width: 90%;
+  border-radius: 10px;
+}
+.heartSize {
+  font-size: 2.3vw;
+}
+.activity-card-image {
+  border-radius: 10px;
+}
+.heartOutlined {
+  color: #c4d0b8;
+}
+.heartFilled {
+  color: rgb(248, 4, 4);
+}
+.middle-row-height {
+  height: 70px;
+}
+.bdge-color {
+  background-color: #52c41a;
+}
+.cityName {
+  color: gray;
+}
+.learnMore {
+  color: gray;
+}
+.learnMore:hover {
+  transition: 0.1s;
+  color: #0091ea;
+}

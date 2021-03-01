@@ -1,74 +1,24 @@
-.Map{
+.Map {
   border-radius: 10px;
 }
 .control-panel {
-    position: absolute;
-    top: 0;
-    right: 0;
-    max-width: 320px;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    padding: 12px 24px;
-    margin: 20px;
-    font-size: 13px;
-    line-height: 2;
-    color: #6b6b76;
-    text-transform: uppercase;
-    outline: none;
-  }
-  .control-panel:hover{
-    cursor: pointer;
-  }
-  .popup-styling{
-    padding: -10px;
-  }
-  .tooltiptext {
-    visibility: visible;
-    width: 100px;
-    /* background-color: #0091EA; */
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    opacity: 1;
-    border : 0.1px solid rgba(255, 255, 255, 0.301);
-    transition: opacity 0.3s;
-    pointer-events: auto;
-    transition: background-color 60ms cubic-bezier(0.4,0.0,0.2,1) 30ms,line-height 60ms cubic-bezier(0.4,0.0,0.2,1) 30ms;
-  }
-  
-  .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-
-  }
-  .tooltiptextBlue{
-    background-color: #0091EA;
-  }
-  .tooltiptextBlue::after{
-    border-color: #0091EA transparent transparent transparent;
-
-  }
-  .tooltiptextYellow::after{
-    border-color: #fadb14 transparent transparent transparent;
-  }
-  .tooltiptextYellow{
-    background-color: #fadb14;
-  }
-  .tooltiptext:hover { cursor: pointer;
-    transition: 0.2s;
-    background-color: #fadb14;
-    z-index: 10000;
-  }
-  .tooltiptext:hover:after{
-    border-color: #fadb14 transparent transparent transparent;
-    z-index: 10000;
-  }
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 320px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 12px 24px;
+  margin: 20px;
+  font-size: 13px;
+  line-height: 2;
+  color: #6b6b76;
+  text-transform: uppercase;
+  outline: none;
+}
+.mapboxgl-popup-close-button {
+  display: none;
+}
+.control-panel:hover {
+  cursor: pointer;
+}

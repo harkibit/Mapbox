@@ -1,0 +1,75 @@
+.card {
+  margin: 30px;
+}
+.ant-card-cover {
+  border-radius: 10px;
+}
+.img-size {
+  height: 260px;
+  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.act-numb {
+  color: rgb(163, 163, 163);
+}
+.seeMore {
+  text-decoration: underline;
+}
+.meta-card-content {
+  margin-top: -10px;
+}
+.meta-card-title {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  display: flex;
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  right: -1px;
+  background-color: #0091ea;
+  overflow: hidden;
+  width: 100.7%;
+  height: 0;
+  transition: 0.5s ease;
+  border-radius: 0 0 10px 10px;
+}
+
+.container:hover .overlay {
+  height: 24.5%;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.city-name {
+  font-size: 25px;
+}
+.learn-more {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.learn-more:hover {
+  cursor: pointer;
+}

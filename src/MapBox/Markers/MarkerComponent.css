@@ -1,0 +1,58 @@
+.tooltiptext {
+    visibility: visible;
+    width: 100px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 0;
+    bottom: 125%;
+    border: 0.1px solid rgba(255, 255, 255, 0.301);
+    transition: 0.3s;
+  }
+  
+  .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    z-index: 0;
+  }
+  .tooltiptextBlue {
+    background-color: #0091ea;
+    position: absolute;
+    z-index: 0;
+  }
+  .tooltiptextBlue::after {
+    border-color: #0091ea transparent transparent transparent;
+  }
+  .tooltiptextYellow::after {
+    border-color: #fadb14 transparent transparent transparent;
+  }
+  .tooltiptextYellow {
+    background-color: #fadb14;
+    position: absolute;
+    z-index: 0;
+  }
+  .tooltiptext:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #fadb14;
+    transform: perspective(500px) translateZ(50px);
+    z-index: 5 !important;
+  }
+  .tooltiptext:hover:after {
+    cursor: pointer;
+    transition: 0.2s;
+    border-color: #fadb14 transparent transparent transparent;
+    transform: perspective(500px) translateZ(50px);
+    z-index: 5 !important;
+  }
+  
+  .cityMarker{
+      height : 30px;
+      width: 30px;
+  }

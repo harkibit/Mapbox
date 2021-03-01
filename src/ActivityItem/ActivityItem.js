@@ -10,16 +10,13 @@ import {
 const { Title } = Typography;
 
 export default function ActivitiesItem(props) {
-  const { key, imgsrc, name, cityName, rating, price, tags, handleMapTooltip } = props;
+  const { key, imgsrc, name, cityName, rating, price, tags, handleMouseOver, handleMouseLeave} = props;
 
-  const [hover, setHover] = useState(false);
-  // const handleMapTooltip = () => {
-  //   console.log(key, hover);
-  //   setHover(!hover);
-  // };
-  const handleMouseLeave = () => {
-    setHover(!hover);
-  };
+  const [activeActivityItem, setActiveActivityItem] = useState(null)
+  const activate = () => {
+    setActiveActivityItem(activeActivityItem)
+  }
+  
   const [like, setLike] = useState(true);
   const toggleLike = () => {
     setLike(!like);
@@ -30,12 +27,13 @@ export default function ActivitiesItem(props) {
       className="cardSize"
       hoverable
       key={key}
-      onMouseOver={handleMapTooltip}
-      onMouseLeave={handleMouseLeave}
+      onMouseOver={elem => handleMouseOver(key)}
+      onMouseLeave={elem => handleMouseLeave(key)}
+      onClick = {activate}
     >
       <Row>
         <Col span={9}>
-          <img className="image" src={imgsrc} width={210} height={150} />
+          <img className="activity-card-image" src={imgsrc} width={210} height={150} />
         </Col>
 
         <Col span={15}>
@@ -44,6 +42,7 @@ export default function ActivitiesItem(props) {
               <Title level={3}>{name}</Title>
             </Col>
             <Col span={3}>
+              
               <Tooltip
                 placement="top"
                 title={like ? "add to favorite" : "remove from favorite"}
@@ -70,7 +69,9 @@ export default function ActivitiesItem(props) {
               <Rate disabled allowHalf defaultValue={rating} />
             </Col>
             <Col span={5}>
-              <Title level={3}>{price}$</Title>
+              <Title level={3}>
+                {price === "FREE" ? price : price + "$"}
+              </Title>
             </Col>
           </Row>
 
