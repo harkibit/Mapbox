@@ -23,11 +23,11 @@ export default function ActivityPage() {
 
   const handleMouseOver = (elem) => {
     setHover(true);
-    // setId(elem.id)
+    console.log(elem)
   };
   const handleMouseLeave = (elem) => {
     setHover(false);
-    // setId(null)
+    setId(null)
   };
   const handleFilter = (priceResult,actResult,cityResult)=>{
     if(cityResult.length !== 0 && actResult.length === 0 && priceResult.length === 0){
@@ -83,6 +83,7 @@ export default function ActivityPage() {
   return (
     <TooltipColor.Provider value={hover}>
       <ID.Provider value = {id}>
+        {console.log(id)}
       <div className="act-page">
         <div className="left-grid-column">
           <DropDownsPackage handleFilter={handleFilter}/>

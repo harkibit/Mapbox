@@ -6,7 +6,7 @@
     border-radius: 6px;
     position: absolute;
     z-index: 0;
-    bottom: 125%;
+    bottom: 110%;
     border: 0.1px solid rgba(255, 255, 255, 0.301);
     transition: 0.3s;
   }
@@ -56,3 +56,5 @@
       height : 30px;
       width: 30px;
   }
+
+  /* f76bb5399b63a2c730ab03c40b1e0a86 */
