@@ -10,7 +10,7 @@
     "icon": "",
     "description": "Get the chance to walk in the narrow streets and admire the architecture of the well preserved Mamluks city while tasting Tripolitan's street food and its famous sweets.",
     "related_tags": ["bike tours","guided tour"],
-    "price": "10",
+    "price": 10,
     "rating": 5.0,
     "tour_guides": [
       {
@@ -34,7 +34,7 @@
     "icon": "",
     "description": "The Palm Islands Nature Reserve consists of three flat, rocky islands of eroded limestone and the surrounding sea area, located 5.5 kilometres (3.4 mi) offshore and northwest of the city of Mina, to the west of Tripoli.",
     "related_tags": ["beaches","island","trip"],
-    "price": "25",
+    "price": 25,
     "rating": 4.5,
     "tour_guides": [
       {
@@ -58,7 +58,7 @@
     "icon": "",
     "description": "The Citadel of Raymond de Saint-Gilles, also known as Qala'at Sanjil and Qala'at Tarablus in Arabic, is a citadel and fort on a hilltop in Tripoli.",
     "related_tags": ["history plaques", "good for kids", "city views","rampart"],
-    "price": "3",
+    "price": 3,
     "rating": 4.5,
     "tour_guides": [
       {
@@ -106,7 +106,7 @@
     "icon": "",
     "description": "Al Tal city square is a 19-20th century development with its most historic buildings commissioned by the Ottomans. It has Ottoman and European influenced buildings on account of the Ottoman Empire and subsequent French Colonization.",
     "related_tags": ["history","al manchiyeh park"],
-    "price": "2",
+    "price": 2,
     "rating": 4.5,
     "tour_guides": [
       {
@@ -181,7 +181,7 @@
     "icon": "",
     "description": "Qasr Naous is the vestige of two Roman Temples situated on a hilltop, some 600 meters above the sea in the village of Ain Aakrine, Koura.The first temple, the one in the east, has survived pretty well.",
     "related_tags": [],
-    "price": "11",
+    "price": 11,
     "rating": 4.5,
     "tour_guides": [
       {
@@ -206,7 +206,7 @@
     "icon": "",
     "description": "Rock climbing is a sport in which participants climb up, down or across natural rock formations or artificial rock walls. The goal is to reach the summit of a formation or the endpoint of a usually pre-defined route without falling.",
     "related_tags": [],
-    "price": "15",
+    "price": 15,
     "rating": 4.5,
     "tour_guides": [
       {
@@ -230,7 +230,7 @@
     "icon": "",
     "description": "Abseiling, also known as rappelling, is a controlled descent off a vertical drop, such as a rock face, using a rope.",
     "related_tags": [],
-    "price": "5",
+    "price": 5,
     "rating": 3.9,
     "tour_guides": [
       {
@@ -278,7 +278,7 @@
     "icon": "",
     "description": "",
     "related_tags": [],
-    "price": "30",
+    "price": 30,
     "rating": 5.0,
     "tour_guides": [
       {
@@ -302,7 +302,7 @@
     "icon": "",
     "description": "Ehden Adventures is an establishment for outdoor activities since 2007. We provide all sort of outdoor activities for all ages and levels.",
     "related_tags": [],
-    "price": "50",
+    "price": 50,
     "rating": 5.0,
     "tour_guides": [
       {
@@ -350,7 +350,7 @@
     "icon" : "",
     "description": "Hiking helps connect us with our roots to this Earth, giving us a feeling of responsibility to protect and preserve its sacredness. It’s a way to get reacquainted with our personal passions.",
     "related_tags" : ["nature","hiking","wildlife"],
-    "price": "10",
+    "price": 10,
     "rating":5.0,
     "tour_guides" : [
         {
