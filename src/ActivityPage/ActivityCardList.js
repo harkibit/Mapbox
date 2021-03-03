@@ -85,8 +85,8 @@ export default function ActivityCardList(props) {
               cityName={activity.city}
               price={activity.price}
               rating={activity.rating}
-              handleMouseOver = {handleMouseOver}
-              handleMouseLeave = {handleMouseLeave}
+              handleMouseOver = {handleMouseOver(activity.id)}
+              handleMouseLeave = {handleMouseLeave(activity.id)}
             />
           </>
         })

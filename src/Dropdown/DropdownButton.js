@@ -9,11 +9,11 @@ export default function DropdownButton({
   handleSelect,
   dropdownTitle,
 }) {
-  const [elementChecked, setElementChecked] = useState(dropdownTitle);
+  // const [elementChecked, setElementChecked] = useState(dropdownTitle);
 
   const handleClick = (element) => {
     let value = element.item.props.value;
-    setElementChecked(value);
+    // setElementChecked(value);
     handleSelect(value);
   };
 
@@ -36,7 +36,7 @@ export default function DropdownButton({
     <div>
       <Dropdown overlay={menu}>
         <Button className="dropButton" shape="round">
-          {elementChecked} <DownOutlined />
+           {dropdownTitle} <DownOutlined />
         </Button>
       </Dropdown>
     </div>
