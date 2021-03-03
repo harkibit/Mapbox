@@ -1,9 +1,9 @@
-.cardSize {
+.activity-item-card {
   height: 200px;
   width: 90%;
   border-radius: 10px;
 }
-.heartSize {
+.act-heartSize {
   font-size: 2.3vw;
 }
 .activity-card-image {
@@ -17,9 +17,6 @@
 }
 .middle-row-height {
   height: 70px;
-}
-.bdge-color {
-  background-color: #52c41a;
 }
 .cityName {
   color: gray;

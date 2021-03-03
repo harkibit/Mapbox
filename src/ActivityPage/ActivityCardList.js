@@ -4,36 +4,28 @@ import "./ActivityPage.css";
 import { Pagination, Spin, Skeleton } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
 import { CloseOutlined } from '@ant-design/icons';
-
 export default function ActivityCardList(props) {
   const {activityData, handleMouseOver,handleMouseLeave} = props
-  
   let length = 0;
   const [current, setCurrent] = useState();
-  
-
   const [filteredOutdoor, setFilteredOutdoor] = useState(false);
   const [loading, setLoading] = useState(false);
   const [show,setShow] = useState(false)
   const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
   const filterOutdoor = () => {
     setShow(!show)
-    setLoading(true);
-    console.log(loading)
-    
+    setLoading(!show);
+    // console.log(loading)
     setTimeout(() => setLoading(false), 2000);
-    console.log(loading)
+    // console.log(loading)
     setFilteredOutdoor(!filteredOutdoor);
   };
-
   // pagination
   const originTargetKeys = activityData.filter(item => +item.id % 3 > 1).map(item => item.id);
   const [targetKeys,setTargetKeys] = useState(originTargetKeys)
   const onChange = nextTargetKeys => {
     setTargetKeys(nextTargetKeys);
   };
-
-
   return (
     <div className="ActivityList">
       <div className="result-sort">
@@ -43,7 +35,6 @@ export default function ActivityCardList(props) {
           {show ? <CloseOutlined /> : ""}
         </span>
       </div>
-
       {filteredOutdoor ? (
         loading ? (
           <div className="loading">
@@ -54,20 +45,19 @@ export default function ActivityCardList(props) {
         ) : (
           activityData
             .filter((activity) => activity.type === "Outdoor Activity")
-            .slice(0, 10)
             .map((activity) => {
               {length = activityData.filter((activity) => activity.type === "Outdoor Activity").length}
               return <>
                 <ActivityItem
-                  key={activity.id}
+                  index={activity.id}
                   imgsrc={activity.image}
                   name={activity.name}
                   tags={activity.related_tags}
                   cityName={activity.city}
                   price={activity.price}
                   rating={activity.rating}
-                  handleMouseOver = {handleMouseOver(activity.id)}
-                  handleMouseLeave = {handleMouseLeave(activity.id)}
+                  handleMouseOver = {handleMouseOver}
+                  handleMouseLeave = {handleMouseLeave}
                 />
               </>
             })
@@ -75,32 +65,22 @@ export default function ActivityCardList(props) {
       ) : (
         activityData.slice(0, 10).map((activity) => {
           {length = activityData.length}
-
           return <>
             <ActivityItem
-              key={activity.id}
+              index={activity.id}
               imgsrc={activity.image}
               name={activity.name}
               tags={activity.related_tags}
               cityName={activity.city}
               price={activity.price}
               rating={activity.rating}
-              handleMouseOver = {handleMouseOver(activity.id)}
-              handleMouseLeave = {handleMouseLeave(activity.id)}
+              handleMouseOver = {handleMouseOver}
+              handleMouseLeave = {handleMouseLeave}
             />
           </>
         })
       )}
-      <div className="pagination">
-        <Pagination
-          current={targetKeys}
-          onChange={onChange}
-          defaultCurrent={1}
-          defaultPageSize={length}
-          total={length + 1}
-          showTotal={(total, range) => `${range[0]}-${range[1]} of ${total} items`}
-        />
-      </div>
+     
     </div>
   );
 }

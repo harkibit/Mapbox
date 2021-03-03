@@ -66,7 +66,7 @@ export default function DropDownsPackage({handleFilter}) {
         handleSelect={handleSelectPrice}
         dropdownTitle={"Price"}
       />
-      <button onClick={handleClick}> reset </button>
+      <button onClick={handleClick}> Filter </button>
     </div>
   );
 }

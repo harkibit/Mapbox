@@ -93,3 +93,4 @@ export default function Map(props) {
 }
 
 // mapboxApiAccessToken = {process.env.REACT_APP_MAPBOX_TOKEN}
+// mapboxApiAccessToken = "pk.eyJ1IjoiaGliYWFiZGVsayIsImEiOiJja2w4Mzh5d2wwbjBvMnJyMmp6ZnAzb2p6In0.FIowvm4NTM-Ok20GCrQUAA"

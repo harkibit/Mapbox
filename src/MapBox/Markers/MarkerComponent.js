@@ -37,4 +37,3 @@ function MarkerComponent(props) {
 }
 
 export default React.memo(MarkerComponent);
-
