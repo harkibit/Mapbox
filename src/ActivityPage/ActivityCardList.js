@@ -59,15 +59,15 @@ export default function ActivityCardList(props) {
               {length = activityData.filter((activity) => activity.type === "Outdoor Activity").length}
               return <>
                 <ActivityItem
-                  key={activity.id}
+                  index={activity.id}
                   imgsrc={activity.image}
                   name={activity.name}
                   tags={activity.related_tags}
                   cityName={activity.city}
                   price={activity.price}
                   rating={activity.rating}
-                  handleMouseOver = {handleMouseOver(activity.id)}
-                  handleMouseLeave = {handleMouseLeave(activity.id)}
+                  handleMouseOver = {handleMouseOver}
+                  handleMouseLeave = {handleMouseLeave}
                 />
               </>
             })
@@ -78,7 +78,7 @@ export default function ActivityCardList(props) {
 
           return <>
             <ActivityItem
-              key={activity.id}
+              index={activity.id}
               imgsrc={activity.image}
               name={activity.name}
               tags={activity.related_tags}

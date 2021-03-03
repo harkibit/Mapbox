@@ -21,13 +21,14 @@ export default function ActivityPage() {
   const [id, setId] = useState(null);
   const [checked, setChecked] = useState([]);
 
-  const handleMouseOver = (elem) => {
+  const handleMouseOver = (id) => {
     setHover(true);
+    setId(id);
     console.log(elem)
   };
-  const handleMouseLeave = (elem) => {
+  const handleMouseLeave = (id) => {
     setHover(false);
-    setId(null)
+    setId(null);
   };
   const handleFilter = (priceResult,actResult,cityResult)=>{
     if(cityResult.length !== 0 && actResult.length === 0 && priceResult.length === 0){
@@ -89,12 +90,12 @@ export default function ActivityPage() {
           <DropDownsPackage handleFilter={handleFilter}/>
           {checked.length === 0 ? <ActivityCardList
             activityData={ACTIVITIES}
-            handleMouseOver={(e) => handleMouseOver(e)}
-            handleMouseLeave={(e) => handleMouseLeave(e)}
+            handleMouseOver={handleMouseOver}
+            handleMouseLeave={ handleMouseLeave}
           /> : <ActivityCardList
           activityData={checked}
-          handleMouseOver={(e) => handleMouseOver(e)}
-          handleMouseLeave={(e) => handleMouseLeave(e)}
+          handleMouseOver={handleMouseOver}
+          handleMouseLeave={ handleMouseLeave}
         /> }
           
         </div>
