@@ -13,7 +13,7 @@ export default function App() {
   dotenv.config()
   return (
     <div>
-      {/* <ActivityPage /> */}
+      <ActivityPage />
 
       {/* <Form citiesArray={citiesArray} /> */}
       {/* <SingleActivityPage activityName = "Hiking" tags = {citiesArray} /> */}

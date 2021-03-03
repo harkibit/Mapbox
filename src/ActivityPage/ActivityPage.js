@@ -24,6 +24,7 @@ export default function ActivityPage() {
   const handleMouseOver = (id) => {
     setHover(true);
     setId(id);
+    console.log(elem)
   };
   const handleMouseLeave = (id) => {
     setHover(false);
@@ -83,6 +84,7 @@ export default function ActivityPage() {
   return (
     <TooltipColor.Provider value={hover}>
       <ID.Provider value = {id}>
+        {console.log(id)}
       <div className="act-page">
         <div className="left-grid-column">
           <DropDownsPackage handleFilter={handleFilter}/>

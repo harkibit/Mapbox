@@ -60,14 +60,14 @@ export default function Map(props) {
 
   const [popupInfo, setPopupInfo] = useState(null);
   const removePopUp = () => setPopupInfo(null)
-
+  
   return (
     <ReactMapGL
       {...viewport}
       className = "Map"
       onViewportChange={nextViewport => setViewport(nextViewport)}
       mapStyle = "mapbox://styles/hibaabdelk/ckl83yd1428pa17nybmm02s4d"
-      mapboxApiAccessToken = {process.env.REACT_APP_MAPBOX_TOKEN}
+      mapboxApiAccessToken = "pk.eyJ1IjoiaGliYWFiZGVsayIsImEiOiJja2w4Mzh5d2wwbjBvMnJyMmp6ZnAzb2p6In0.FIowvm4NTM-Ok20GCrQUAA"
     >
 
       <MarkerComponent data={data} onHover={setPopupInfo} onMouseLeave = {removePopUp} type = {infoType} />
