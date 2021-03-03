@@ -10,7 +10,7 @@ import {
 const { Title } = Typography;
 
 export default function ActivitiesItem(props) {
-  const { key, imgsrc, name, cityName, rating, price, tags, handleMouseOver, handleMouseLeave} = props;
+  const { index, imgsrc, name, cityName, rating, price, tags, handleMouseOver, handleMouseLeave} = props;
 
   const [activeActivityItem, setActiveActivityItem] = useState(null)
   const activate = () => {
@@ -21,14 +21,14 @@ export default function ActivitiesItem(props) {
   const toggleLike = () => {
     setLike(!like);
   };
-
+  // handleMouseOver(key)
   return (
     <Card
       className="cardSize"
       hoverable
-      key={key}
-      onMouseOver={elem => handleMouseOver(key)}
-      onMouseLeave={elem => handleMouseLeave(key)}
+      key={index}
+      onMouseOver={elem => handleMouseOver(index)}
+      onMouseLeave={elem => handleMouseLeave(index)}
       onClick = {activate}
     >
       <Row>
